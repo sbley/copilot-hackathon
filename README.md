@@ -49,8 +49,10 @@ If you have missed a functionality, ask copilot to create that missing functiona
 
 Additionally: Ask copilot for CSS styling.
 
+## Scenario 4:
+Here we create the second functional component. Please read through the whole scenario before you enter your prompt.
 
-
+Task: create a component with a textare field, where you paste in the names of people (seperated by comma or semicolon). The component should have a button called "select next participient". Upon click, a name should be selected and removed from the text box. That name should appear in Bold letters underneath the button.
 
 ## Sample prompts
 
