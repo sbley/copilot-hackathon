@@ -17,6 +17,13 @@ npm create vite@latest
 ```
 select React and JavaScript and give the project a meaningful name (e.g. YOURCOMPANYNAMETrainerTools).
 
+After than run these 3 prompts
+```
+cd YOURCOMPANYNAMETrainerTools
+npm install
+npm rum dev
+```
+
 On the command prompt start VS Code via
 ```
 code .
