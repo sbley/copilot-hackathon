@@ -31,8 +31,26 @@ On the command prompt start VS Code via
 code .
 ```
 
-Then delete the body contents in App.jsx, so we can start fresh.
-Then add a folder "components"
+Then delete the body contents in App.jsx, so we can start fresh. The App.jsx should look like this now:
+```
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      
+    </>
+  )
+}
+
+export default App
+```
+Then add a folder "components" in the src folder.
 
 ## Scenario 0: Start with Copilot
 Task: Get yourself familiar with Copilot inline code and Copilot chat. Try out Slash commands 
