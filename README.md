@@ -10,7 +10,8 @@ We are building a website for trainers that have some components that can be use
 * a header with a headline
 * a footer
 
-Here is a screenshot:
+### Here is a screenshot:
+
 <img width="417" alt="image" src="https://github.com/Blubern/GCH-WebDevJavaScript/assets/12153827/b165d6b7-28c8-4910-a08a-a67e2089ea61">
 
 
