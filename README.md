@@ -24,6 +24,8 @@ npm install
 npm rum dev
 ```
 
+Open a browser on the link that is in the terminal.
+
 On the command prompt start VS Code via
 ```
 code .
