@@ -131,9 +131,9 @@ The website is being built in React with JavaScript.
 The first component that I want to build is a timer for a coffee break. Please help me building that timer. Here are the features:
  - Customizable duration for a break
  - Some buttons for a default break duration (5 min, 10 min, 15 min, 45 min, 1 hour)
+ - A Button "Timer Start"
  - Upon clicking "Timer Start" the timer should start and count down.
  - When the timer is up an alarm should go off.
- - Additionally, Next to the time, I need a content space where I can show links
 
 Can you build that component for me?
 ```
