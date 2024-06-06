@@ -15,6 +15,7 @@ const CoffeeTimer = () => {
                 } else {
                     alert('Time is up!');
                     clearInterval(interval);
+                    setTimerOn(false); // Reset the timer
                 }
             }, 1000);
         } else if (!timerOn || time === null) {
@@ -32,7 +33,7 @@ const CoffeeTimer = () => {
                 <button className="button" onClick={() => setTime(600)}>10 min</button>
             </div>
             <div>
-                <button className="button" onClick={() => setTimerOn(true)} disabled={time === null}>Start</button>
+                <button className="button" onClick={() => setTimerOn(true)} disabled={time === null || timerOn}>Start</button>
             </div>
             <h3>{time !== null ? `${Math.floor(time / 60)}:${time % 60 < 10 ? `0${time % 60}` : time % 60}` : 'Please select a time range'}</h3>
         </div>

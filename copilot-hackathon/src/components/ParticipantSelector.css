@@ -1,0 +1,26 @@
+.participant-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.participant-selector textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.participant-selector button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.participant-selector p {
+    font-size: 20px;
+    font-weight: bold;
+}
