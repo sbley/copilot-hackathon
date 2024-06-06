@@ -4,6 +4,12 @@ import './CoffeeTimer.css';
 const CoffeeTimer = () => {
     const [time, setTime] = useState(null);
     const [timerOn, setTimerOn] = useState(false);
+    const [timeSelected, setTimeSelected] = useState(false);
+
+    const selectTime = (time) => {
+        setTime(time);
+        setTimeSelected(true);
+    };
 
     useEffect(() => {
         let interval = null;
@@ -14,8 +20,11 @@ const CoffeeTimer = () => {
                     setTime(prevTime => prevTime - 1);
                 } else {
                     alert('Time is up!');
-                    clearInterval(interval);
-                    setTimerOn(false); // Reset the timer
+                    setTimeout(() => {
+                        clearInterval(interval);
+                        setTimerOn(false);
+                        setTimeSelected(false);
+                    }, 0);
                 }
             }, 1000);
         } else if (!timerOn || time === null) {
@@ -29,11 +38,12 @@ const CoffeeTimer = () => {
         <div>
             <h2>Coffee Break Timer</h2>
             <div>
-                <button className="button" onClick={() => setTime(300)}>5 min</button>
-                <button className="button" onClick={() => setTime(600)}>10 min</button>
+                <button className="button" onClick={() => selectTime(60)}>1 min</button>
+                <button className="button" onClick={() => selectTime(300)}>5 min</button>
+                <button className="button" onClick={() => selectTime(600)}>10 min</button>
             </div>
             <div>
-                <button className="button" onClick={() => setTimerOn(true)} disabled={time === null || timerOn}>Start</button>
+                <button className="button" onClick={() => setTimerOn(true)} disabled={!timeSelected || timerOn}>Start</button>
             </div>
             <h3>{time !== null ? `${Math.floor(time / 60)}:${time % 60 < 10 ? `0${time % 60}` : time % 60}` : 'Please select a time range'}</h3>
         </div>
